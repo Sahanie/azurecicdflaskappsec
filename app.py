@@ -65,7 +65,6 @@ def predict():
     LOG.info(f"prediction: {prediction}")
     return jsonify({'prediction': prediction})
 
-clf = None
 if __name__ == "__main__":
     global clf
     clf = joblib.load("boston_housing_prediction.joblib")
