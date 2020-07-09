@@ -26,6 +26,7 @@ def home():
 # TO DO:  Log out the prediction value
 @app.route("/predict", methods=['POST'])
 def predict():
+    global clf
     """Performs an sklearn prediction
 
     input looks like:
@@ -64,6 +65,8 @@ def predict():
     LOG.info(f"prediction: {prediction}")
     return jsonify({'prediction': prediction})
 
+clf = None
 if __name__ == "__main__":
+    global clf
     clf = joblib.load("boston_housing_prediction.joblib")
     app.run(host='0.0.0.0', port=80, debug=True)
