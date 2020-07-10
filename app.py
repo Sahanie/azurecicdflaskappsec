@@ -6,6 +6,8 @@ import pandas as pd
 from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
 
+from utils import clf
+
 app = Flask(__name__)
 LOG = create_logger(app)
 LOG.setLevel(logging.INFO)
@@ -53,7 +55,7 @@ def predict():
     { "prediction": [ 20.35373177134412 ] }
 
     """
-    clf = joblib.load("boston_housing_prediction.joblib")
+    #clf = joblib.load("boston_housing_prediction.joblib")
 
 
     json_payload = request.json
