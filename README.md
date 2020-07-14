@@ -1,6 +1,8 @@
+# Flask SKLearn CI/CD
+
 # Overview
 
-<TODO: complete this with an overview of your project>
+The sklearn app is a python ml project that predicts prices of houses. In this project, we are using agile principles by giving the sklearn app a CI/CD touch. Working with the Azure Cloudshell, we use git actions for contnous integration and Azure pipelines for continous delivery. Azure App Service is where the app is deployed.
 
 ## Project Plan
 
