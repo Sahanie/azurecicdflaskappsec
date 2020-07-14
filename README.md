@@ -10,9 +10,7 @@
 ## Instructions
 
 Here is an architectural view of the project
-![Architecture](./images/architecture.PNG)
-
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+![Architecture](./images/architecture.png)
 
 
 The project can be ran on docker by simply following the below commands. A prequisite fot this is having [docker](https://www.docker.com) installed on your machine.
